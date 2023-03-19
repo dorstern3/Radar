@@ -9,3 +9,4 @@ The second way is through a **GUI** connected via **UART communication**, which 
 In addition, the **GUI** detects with the help of the ultrasonic sensor when there is and when there is no object in front of it. <br>
 
 ## Electrical diagram:
+![Electrical diagram](https://user-images.githubusercontent.com/96941609/226195805-9b67b911-201d-4230-a40e-2630c4e9acbe.png)
