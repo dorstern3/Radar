@@ -8,7 +8,8 @@ One way is through a **16X2 LCD screen** connected via **I2C communication**.<br
 The second way is through a **GUI** connected by **UART communication**, which receives a string of angle and distance and displays it in the form of a radar display.<br>
 In addition, the **GUI** detects with the help of the **HC-SR04 ultrasonic sensor** when an object is or is not present in front of it.<br>
 <br>
-The process of processing the distance of the **HC-SR04 sensor** is carried out using **Timer 1** which measures the width of the pulse and is received by the **ECHO** pin which is responsible for receiving the echo and stopping the stopwatch. According to the formula: Distance = (Time x SpeedOfSound) / 2 <br>
+The process of processing the distance of the **HC-SR04 sensor** is carried out using **Timer 1** which measures the width of the pulse and is received by the **ECHO** pin which is responsible for receiving the echo and stopping the stopwatch.<br>
+According to the formula: Distance = (Time x SpeedOfSound) / 2 <br>
 The **TRIG** pin is responsible for sending the sound detector and starting the timer.<br>
 In addition, the **Servo motor** is controlled by **Timer 2** which is responsible for changing the pulse width.<br>
 
