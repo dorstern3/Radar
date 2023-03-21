@@ -1,0 +1,7 @@
+16:52:02 **** Incremental Build of configuration Debug for project UART_Printf ****
+make -j4 all 
+make: *** No rule to make target 'C:/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c', needed by 'Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal.o'.  Stop.
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+16:52:03 Build Failed. 1 errors, 0 warnings. (took 222ms)
+

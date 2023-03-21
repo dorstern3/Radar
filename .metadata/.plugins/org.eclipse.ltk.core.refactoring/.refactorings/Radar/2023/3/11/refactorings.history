@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Radar/HCSR04.ioc&apos; to &apos;Radar.ioc&apos;" description="Rename resource &apos;HCSR04.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HCSR04.ioc" name="Radar.ioc" stamp="1678656324102" updateReferences="true"/>
+</session>

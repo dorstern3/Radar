@@ -1,0 +1,43 @@
+10:10:56 **** Incremental Build of configuration Debug for project HCSR04 ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/HC-SR04/hc-sr04.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I"C:/Users/dorst/Desktop/Radar/HCSR04/Drivers/HC-SR04" -I"C:/Users/dorst/Desktop/Radar/HCSR04/Drivers/I2C-LCD" -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/HC-SR04/hc-sr04.d" -MT"Drivers/HC-SR04/hc-sr04.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/HC-SR04/hc-sr04.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I"C:/Users/dorst/Desktop/Radar/HCSR04/Drivers/HC-SR04" -I"C:/Users/dorst/Desktop/Radar/HCSR04/Drivers/I2C-LCD" -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "HCSR04.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dorst\Desktop\Radar\HCSR04\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HCSR04.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HCSR04.elf
+ 
+arm-none-eabi-size   HCSR04.elf 
+arm-none-eabi-objdump -h -S  HCSR04.elf  > "HCSR04.list"
+   text	   data	    bss	    dec	    hex	filename
+  40604	    488	   1840	  42932	   a7b4	HCSR04.elf
+Finished building: default.size.stdout
+ 
+Finished building: HCSR04.list
+ 
+10:15:17 **** Incremental Build of configuration Debug for project Radar ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/HC-SR04/hc-sr04.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I"C:/Users/dorst/Desktop/Radar/Radar/Drivers/HC-SR04" -I"C:/Users/dorst/Desktop/Radar/Radar/Drivers/I2C-LCD" -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/HC-SR04/hc-sr04.d" -MT"Drivers/HC-SR04/hc-sr04.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/HC-SR04/hc-sr04.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I"C:/Users/dorst/Desktop/Radar/Radar/Drivers/HC-SR04" -I"C:/Users/dorst/Desktop/Radar/Radar/Drivers/I2C-LCD" -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:170:20: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  170 |        printf("%d,%d\n",i,Distance);
+      |                   ~^      ~~~~~~~~
+      |                    |      |
+      |                    int    uint32_t {aka long unsigned int}
+      |                   %ld
+../Core/Src/main.c:180:23: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  180 |           printf("%d,%d\n",i,Distance);
+      |                      ~^      ~~~~~~~~
+      |                       |      |
+      |                       int    uint32_t {aka long unsigned int}
+      |                      %ld
+arm-none-eabi-gcc -o "Radar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dorst\Desktop\Radar\Radar\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Radar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Radar.elf
+ 
+arm-none-eabi-size   Radar.elf 
+arm-none-eabi-objdump -h -S  Radar.elf  > "Radar.list"
+   text	   data	    bss	    dec	    hex	filename
+  46396	    488	   1984	  48868	   bee4	Radar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Radar.list
+ 

@@ -1,0 +1,3 @@
+../Drivers/HC-SR04/hc-sr04.c:12:6:delay	16	static
+../Drivers/HC-SR04/hc-sr04.c:29:6:HAL_TIM_IC_CaptureCallback	16	static
+../Drivers/HC-SR04/hc-sr04.c:67:6:HCSR04_Read	8	static

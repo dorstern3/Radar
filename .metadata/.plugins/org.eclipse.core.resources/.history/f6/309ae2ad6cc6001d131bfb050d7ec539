@@ -1,0 +1,13 @@
+/*
+ * hc-sr04.h
+ *
+ *  Created on: Mar 19, 2023
+ *      Author: dorst
+ */
+
+#ifndef HC_SR04_HC_SR04_H_
+#define HC_SR04_HC_SR04_H_
+
+
+
+#endif /* HC_SR04_HC_SR04_H_ */
