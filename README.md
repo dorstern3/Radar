@@ -1,6 +1,8 @@
 # Radar Project
 
 ## View:
+###video:
+
 
 ## Description:
 In the project, I used the **STM32G431RB Processor** which activates the **Servo motor** that performs a 180-degree scan when mounted on it is an **HC-SR04 ultrasonic sensor** which, during the scanning process, measures the distance of the object and transmits it in two different ways at the same time.<br>
