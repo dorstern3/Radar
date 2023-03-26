@@ -1,7 +1,8 @@
 # Radar Project
 
 ## View:
-- ### video:
+- ### Video:
+- ### Photos:
 
 
 ## Description:
