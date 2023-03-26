@@ -3,6 +3,12 @@
 ## View:
 - ### Video:
 - ### Photos:
+![All Project](https://user-images.githubusercontent.com/96941609/227784069-96aa5136-2897-484a-903a-c14aecc02ec5.jpg)
+![All Components](https://user-images.githubusercontent.com/96941609/227784083-b1a2a269-6ddc-4171-aff7-53a282d1592e.jpg)
+![GUI](https://user-images.githubusercontent.com/96941609/227784084-c19cec82-79f6-48cb-9a64-520c57b61361.jpg)
+![HC-SR04 ultrasonic sensor + Servo motor](https://user-images.githubusercontent.com/96941609/227784093-3b3ce2e0-badb-46a0-94c4-83cdf191aa7b.jpg)
+![16X2 LCD screen](https://user-images.githubusercontent.com/96941609/227784095-9250588e-16a3-4092-9a58-9cd7c17b994b.jpg)
+
 
 
 ## Description:
